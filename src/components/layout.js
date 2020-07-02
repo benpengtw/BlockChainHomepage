@@ -74,11 +74,11 @@ const LayoutWrapper = styled.div`
   .content-container {
     margin: 0 auto;
     width: 100%;
-    max-width: 500px;
+    // max-width: 500px;
 
-    @media (min-width: 1080px) {
-      max-width: 1050px;
-    }
+    // @media (min-width: 1080px) {
+    //   max-width: 600px;
+    // }
   }
 
   .flex-container {

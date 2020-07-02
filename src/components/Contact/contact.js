@@ -51,7 +51,7 @@ const ContactWrapper = styled.section`
   .content-container {
     width: 100%;
     margin: 0 auto;
-
+    max-width: 600px;
     h2 {
       text-align: left;
       background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);

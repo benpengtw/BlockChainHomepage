@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import socialIcons from "../../constants/social-icons"
+//import socialIcons from "../../constants/social-icons"
 
 const Footer = () => {
   return (
@@ -8,25 +8,13 @@ const Footer = () => {
       <div className="credit">
         Designed & developed by{" "}
         <a
-          href="http://www.morganbaker.dev"
+          href="http://blockchain.wegames.com.tw"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Morgan
+          Wegames
         </a>
       </div>
-      {socialIcons.map((item, index) => {
-        return (
-          <a
-            key={index}
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.icon}
-          </a>
-        )
-      })}
     </FooterWrapper>
   )
 }

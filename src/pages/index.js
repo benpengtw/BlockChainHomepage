@@ -8,15 +8,12 @@ import Packages from "../components/Packages/packages"
 import Package from "../components/Package/package"
 import Contact from "../components/Contact/contact"
 import { Link } from "react-scroll"
-import "aos/dist/aos.css"
-import AOS from "aos/dist/aos"
 import perk1Img from "../images/speed.svg"
 import perk2Img from "../images/piggy-bank.svg"
 import perk3Img from "../images/friendly-staff.svg"
 import { motion } from "framer-motion"
 import { IconContext } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
-AOS.init({ once: true })
 
 export default () => (
   <>
