@@ -58,7 +58,7 @@ export default () => (
             style: { verticalAlign: "middle", marginRight: "5px" },
           }}
         >
-          <Package title="Standard">
+          <Package title="Standard" active={true}>
             <ul>
               <li>
                 <MdDone />1 User
@@ -103,7 +103,7 @@ export default () => (
               <Button cta="I want this!" />
             </Link>
           </Package>
-          <Package title="Super">
+          <Package title="Super" active={true}>
             <ul>
               <li>
                 <MdDone />

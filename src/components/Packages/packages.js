@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Packages = ({ title, para, children }) => {
   return (
-    <PackagesWrapper>
+    <PackagesWrapper id="packages">
       <div className="text-area">
         <h2>{title}</h2>
         <p>{para}</p>
@@ -33,10 +33,11 @@ const PackagesWrapper = styled.section`
   }
 
   .flex-container {
-    flex-direction: column-reverse;
+    flex-direction: row;
+    margin: 10rem;
     padding-top: 80px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     @media (min-width: 992px) {
       flex-direction: row;

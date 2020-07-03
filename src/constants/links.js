@@ -5,6 +5,10 @@ export default [
   },
   {
     path: "/",
+    text: "perks",
+  },
+  {
+    path: "/",
     text: "packages",
   },
   {

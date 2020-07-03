@@ -26,6 +26,7 @@ const Navbar = () => {
           <span></span>
           <span></span>
           <span></span>
+          <span></span>
         </button>
       </div>
       <ul
@@ -40,7 +41,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-50}
+                offset={-10}
               >
                 {item.text}
               </Link>

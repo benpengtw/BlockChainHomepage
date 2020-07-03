@@ -6,7 +6,7 @@ import styled from "styled-components"
 const TextBlockImg = ({ title, children, subtitle, id }) => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "purple-bg.jpg" }) {
+      file(relativePath: { eq: "flames.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -38,7 +38,7 @@ const TextBlockImgWrapper = styled.section`
 
   .content-container {
     max-width: 500px;
-
+    min-height: 85vh;
     @media (min-width: 768px) {
       max-width: 650px;
     }
