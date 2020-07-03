@@ -14,20 +14,6 @@ const Navbar = () => {
     <NavWrapper>
       <div className="masthead flex-container">
         <img src={Logo} alt="Startup Logo" />
-        <button
-          className={
-            isOpen
-              ? `${"toggle-btn"} ${"toggle-btn-active"}`
-              : `${"toggle-btn"}`
-          }
-          type="button"
-          onClick={toggleNav}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
       <ul
         className={isOpen ? `${"nav-links"} ${"show-nav"}` : `${"nav-links"}`}
