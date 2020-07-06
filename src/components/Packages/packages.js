@@ -34,8 +34,8 @@ const PackagesWrapper = styled.section`
 
   .flex-container {
     flex-direction: row;
-    margin: 10rem;
-    padding-top: 80px;
+    margin: 6rem;
+    padding-top: 20px;
     align-items: center;
     justify-content: space-evenly;
 
