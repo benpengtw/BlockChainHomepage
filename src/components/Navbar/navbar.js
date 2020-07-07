@@ -2,8 +2,27 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Logo from "../../images/startup-logo.svg"
 import { Link, animateScroll as scroll } from "react-scroll"
+import Grid from "@material-ui/core/Grid"
+import { makeStyles } from "@material-ui/core/styles"
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  link: {
+    color: "#fff",
+    transition: "0.3s",
+    "&:hover": {
+      color: "#e609b5",
+    },
+  },
+  linkOpen: {
+    color: "#e609b5",
+    transition: "0.3s",
+  },
+}))
 
 const Navbar = () => {
+  const classes = useStyles()
   const [isOpen, setNav] = useState(false)
 
   const toggleNav = () => {
@@ -27,46 +46,54 @@ const Navbar = () => {
           <span></span>
         </button>
       </div>
-      <ul
-        className={isOpen ? `${"nav-links"} ${"show-nav"}` : `${"nav-links"}`}
+      <Grid
+        container
+        spacing={3}
+        direction="row"
+        justify="flex-end"
+        alignItems="flex-start"
       >
-        <li>
+        {console.log(isOpen)}
+        <Grid item>
           <Link
-            activeClass="active"
+            className={classes.link}
+            activeClass={classes.linkOpen}
             to="about"
             spy={true}
             smooth={true}
             duration={500}
             offset={-50}
           >
-            about
+            關於我們
           </Link>
-        </li>
-        <li>
+        </Grid>
+        <Grid item>
           <Link
-            activeClass="active"
+            className={classes.link}
+            activeClass={classes.linkOpen}
             to="perks"
             spy={true}
             smooth={true}
             duration={500}
             offset={-50}
           >
-            perks
+            特色
           </Link>
-        </li>
-        <li>
+        </Grid>
+        <Grid item>
           <Link
-            activeClass="active"
+            className={classes.link}
+            activeClass={classes.linkOpen}
             to="packages"
             spy={true}
             smooth={true}
             duration={500}
             offset={-50}
           >
-            packages
+            解決方案
           </Link>
-        </li>
-      </ul>
+        </Grid>
+      </Grid>
     </NavWrapper>
   )
 }
@@ -93,50 +120,6 @@ const NavWrapper = styled.nav`
       @media (min-width: 1200px) {
         width: 120px;
       }
-    }
-  }
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    text-align: center;
-    background: linear-gradient(45deg, #060c21, #0d0139);
-    margin: 0;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translateX(100%);
-    transition: 0.3s ease-in;
-    list-style: none;
-    padding-left: 0;
-    li {
-      list-style: none;
-      font-size: 1.25rem;
-      font-weight: 400;
-      margin-left: 0;
-      padding: 0.75rem 0;
-      a {
-        // text-decoration: none;
-        // text-transform: capitalize;
-
-        color: #fff;
-        transition: 0.3s;
-        &.active {
-          color: #e609b5;
-        }
-      }
-      &:hover {
-        cursor: pointer;
-        a {
-          color: #e609b5;
-        }
-      }
-    }
-    &.show-nav {
-      transform: translateX(0%);
     }
   }
   .toggle-btn {
@@ -180,17 +163,6 @@ const NavWrapper = styled.nav`
     }
     .toggle-btn {
       display: none;
-    }
-    .nav-links {
-      background: transparent;
-      flex-direction: row;
-      margin-left: auto;
-      position: relative;
-      transform: translateX(0);
-      transition: none;
-      li {
-        margin-left: 1rem;
-      }
     }
   }
 `
