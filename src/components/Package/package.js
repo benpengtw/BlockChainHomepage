@@ -89,7 +89,7 @@ export const Package = React.memo(function SolidGameCard() {
   const styles = useStyles({ color: "#FFF" })
   return (
     <>
-      <Grid classes={gridStyles} container spacing={4} wrap={"nowrap"}>
+      <Grid classes={gridStyles} container spacing={10}>
         <Grid item>
           <CustomCard
             classes={styles}
