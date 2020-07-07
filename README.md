@@ -1,16 +1,4 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://thestartup.netlify.app">
-    <img alt="Startup Logo" src="/src/images/startup-logo-black.svg" width="200" />
-  </a>
-</p>
-<h1 align="center">
-  Startup
-</h1>
-
-Kick off your project with this startup boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+CSS 處理方式："styled-components" & "material-ui" & "mui-treasury"
 
 ## 🚀 Quick start
 
@@ -23,15 +11,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby new my-startup-starter https://github.com/gatsbyjs/startup
     ```
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-startup-starter/
-    gatsby develop
-    ```
-
+1.
 1.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
@@ -81,5 +61,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-<!-- AUTO-GENERATED-CONTENT:END -->

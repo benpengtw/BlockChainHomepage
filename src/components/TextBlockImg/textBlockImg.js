@@ -38,7 +38,7 @@ const TextBlockImgWrapper = styled.section`
 
   .content-container {
     max-width: 500px;
-    min-height: 85vh;
+    min-height: 80vh;
     @media (min-width: 768px) {
       max-width: 650px;
     }

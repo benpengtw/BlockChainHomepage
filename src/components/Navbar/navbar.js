@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import Logo from "../../images/startup-logo.svg"
+import Logo from "../../images/logo.png"
 import { Link, animateScroll as scroll } from "react-scroll"
 import Grid from "@material-ui/core/Grid"
 import { makeStyles } from "@material-ui/core/styles"
@@ -113,12 +113,12 @@ const NavWrapper = styled.nav`
     width: 100%;
     justify-content: space-between;
     img {
-      width: 90px;
+      width: 90vw;
       @media (min-width: 768px) {
         width: 100px;
       }
       @media (min-width: 1200px) {
-        width: 120px;
+        width: 320px;
       }
     }
   }

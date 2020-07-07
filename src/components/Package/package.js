@@ -28,6 +28,7 @@ const useSlopeCardMediaStyles = makeStyles(() => ({
 const useStyles = makeStyles(() => ({
   actionArea: {
     borderRadius: 16,
+    width: "25vw",
     transition: "0.2s",
     "&:hover": {
       transform: "scale(1.1)",
@@ -93,7 +94,9 @@ export const Package = React.memo(function SolidGameCard() {
           <CustomCard
             classes={styles}
             title={"第三方金流"}
-            subtitle={"Be a Legend!"}
+            subtitle={
+              "Wegames BlockChain 為客戶建置專業之去中心化交易平台，其具有去中心化、匿名性、不可竄改性、可追蹤性、加密安全性五大特色。聯盟中各大交易所將可在後端 API 共用訂單池，大幅提高交易量與成交速率。同時，也具備可追蹤且不易竄改之特性，在沒有第三方的情況下，仍能安全交易。"
+            }
             image={
               "https://www.icoappfactory.com/wp-content/uploads/2019/10/payment-forwardered.jpg"
             }
@@ -103,7 +106,9 @@ export const Package = React.memo(function SolidGameCard() {
           <CustomCard
             classes={styles}
             title={"募資平台"}
-            subtitle={"What are you waiting?"}
+            subtitle={
+              "電子證照，文檔存證區塊鏈解決方案是 Wegames BlockChain 與合作夥伴共同實現的一套基礎區塊鏈技術的文檔管理方案。將包括證件，證書，合同等重要文檔數字化，通過認證機構審核後存 利用區塊鏈技術不可糾正的改特性，解決證書，票據，合同等易被篡改等問題，同時又可以為政府機構，金融服務提供商等提供可信數據。"
+            }
             image={
               "https://assets.entrepreneur.com/content/3x2/2000/how-set-crowdfunding-goal.jpg?width=700&crop=4:3"
             }
@@ -113,7 +118,9 @@ export const Package = React.memo(function SolidGameCard() {
           <CustomCard
             classes={styles}
             title={"產銷履歷"}
-            subtitle={"Are you ready?"}
+            subtitle={
+              "Wegames BlockChain提供的農業解決方案是一個基於區塊鏈技術的農業大數據平台，該平台整合了與農業相關的種植/養殖，生產加工，包裝，物流，銷售過程中的各類關鍵數據， 並且通過授權，區塊鏈上的信息可以與參與方及終端用戶共享，為企業大數據分析提供可靠憑證，實現智慧農業。"
+            }
             image={
               "https://www.vechain.com/_nuxt/img/solution_pic9.8463dc3.png"
             }

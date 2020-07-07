@@ -18,7 +18,7 @@ const PackagesWrapper = styled.section`
   text-align: center;
 
   .text-area {
-    max-width: 500px;
+    min-width: 1200px;
     margin: 0 auto;
 
     @media (min-width: 1200px) {
