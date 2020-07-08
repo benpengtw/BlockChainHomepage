@@ -33,9 +33,11 @@ const useStyles = makeStyles(() => ({
     "&:hover": {
       transform: "scale(1.1)",
     },
+    "@media (max-width: 992px)": {
+      minWidth: "80vw",
+    },
   },
   card: ({ color }) => ({
-    minWidth: 512,
     borderRadius: 16,
     boxShadow: "none",
     "&:hover": {
