@@ -16,22 +16,27 @@ const Perk = ({ img, alt, title, content }) => {
     }
   }, [controls, inView])
   return (
-    <motion.div
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={{
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 25 },
-      }}
-      transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-    >
-      <PerkWrapper className="perk">
-        <img src={img} alt={alt} />
-        <h3>{title}</h3>
-        <p>{content}</p>
-      </PerkWrapper>
-    </motion.div>
+    // <motion.div
+    //   ref={ref}
+    //   animate={controls}
+    //   initial="hidden"
+    //   variants={{
+    //     visible: { opacity: 1, y: 0 },
+    //     hidden: { opacity: 0, y: 25 },
+    //   }}
+    //   transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
+    // >
+    //   <PerkWrapper className="perk">
+    //     <img src={img} alt={alt} />
+    //     <h3>{title}</h3>
+    //     <p>{content}</p>
+    //   </PerkWrapper>
+    // </motion.div>
+    <PerkWrapper className="perk">
+      <img src={img} alt={alt} />
+      <h3>{title}</h3>
+      <p>{content}</p>
+    </PerkWrapper>
   )
 }
 

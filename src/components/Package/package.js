@@ -33,8 +33,15 @@ const useStyles = makeStyles(() => ({
     "&:hover": {
       transform: "scale(1.1)",
     },
-    "@media (max-width: 992px)": {
+    marginRight: "auto",
+    marginLeft: "auto",
+    maxWidth: "500px",
+    "@media (max-width: 414px)": {
       minWidth: "80vw",
+    },
+
+    "@media (min-width: 1200px)": {
+      maxWidth: "70vw",
     },
   },
   card: ({ color }) => ({
@@ -91,7 +98,14 @@ export const Package = React.memo(function SolidGameCard() {
   const styles = useStyles({ color: "#FFF" })
   return (
     <>
-      <Grid classes={gridStyles} container spacing={10}>
+      <Grid
+        classes={gridStyles}
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        spacing={10}
+      >
         <Grid item>
           <CustomCard
             classes={styles}
@@ -109,7 +123,7 @@ export const Package = React.memo(function SolidGameCard() {
             classes={styles}
             title={"募資平台"}
             subtitle={
-              "電子證照，文檔存證區塊鏈解決方案是 Wegames BlockChain 與合作夥伴共同實現的一套基礎區塊鏈技術的文檔管理方案。將包括證件，證書，合同等重要文檔數字化，通過認證機構審核後存 利用區塊鏈技術不可糾正的改特性，解決證書，票據，合同等易被篡改等問題，同時又可以為政府機構，金融服務提供商等提供可信數據。"
+              "電子證照，文檔存證區塊鏈解決方案是 Wegames BlockChain 與合作夥伴共同實現的一套基礎區塊鏈技術的文檔管理方案。將包括證件，證書，合同等重要文檔數字化，通過認證機構審核後存檔， 利用區塊鏈技術不可糾正的改特性，解決證書，票據，合同等易被篡改等問題。"
             }
             image={
               "https://assets.entrepreneur.com/content/3x2/2000/how-set-crowdfunding-goal.jpg?width=700&crop=4:3"
