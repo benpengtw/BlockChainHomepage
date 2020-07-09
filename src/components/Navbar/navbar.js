@@ -32,28 +32,14 @@ const Navbar = () => {
     <NavWrapper>
       <div className="masthead flex-container">
         <img src={Logo} alt="Startup Logo" />
-        <button
-          className={
-            isOpen
-              ? `${"toggle-btn"} ${"toggle-btn-active"}`
-              : `${"toggle-btn"}`
-          }
-          type="button"
-          onClick={toggleNav}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
       <Grid
         container
         spacing={3}
         direction="row"
         justify="flex-end"
-        alignItems="flex-start"
+        alignItems="center"
       >
-        {console.log(isOpen)}
         <Grid item>
           <Link
             className={classes.link}
@@ -110,49 +96,14 @@ const NavWrapper = styled.nav`
   box-sizing: border-box;
   .masthead {
     z-index: 3;
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
     img {
-      width: 90vw;
-      @media (min-width: 768px) {
-        width: 100px;
-      }
+      width: 38vw;
+      height: 8vh;
       @media (min-width: 1200px) {
         width: 320px;
-      }
-    }
-  }
-  .toggle-btn {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    background-color: transparent;
-    border: none;
-    span {
-      display: block;
-      width: 30px;
-      height: 2px;
-      background-color: #fff;
-      transition: 0.2s ease-in;
-      &:nth-child(1) {
-        transform: translateY(-5px);
-      }
-      &:nth-child(3) {
-        transform: translateY(5px);
-      }
-    }
-    &.toggle-btn-active {
-      span {
-        &:nth-child(1) {
-          transform: translateY(2px) rotate(45deg);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-          transform: translateX(-100%);
-        }
-        &:nth-child(3) {
-          transform: translateY(-2px) rotate(-45deg);
-        }
+        height: auto;
       }
     }
   }
