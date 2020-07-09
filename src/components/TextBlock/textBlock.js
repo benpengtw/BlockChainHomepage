@@ -96,7 +96,7 @@ const TextBlockWrapper = styled.section`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      @media (min-width: 414px) {
+      @media (max-width: 414px) {
         font-size: 1.2rem;
       }
     }
