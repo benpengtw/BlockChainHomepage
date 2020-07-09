@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id="footer">
       <div className="credit">
         Designed & developed by{" "}
         <a

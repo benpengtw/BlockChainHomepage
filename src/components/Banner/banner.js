@@ -34,7 +34,7 @@ const Banner = () => {
         <source src={withPrefix("/blockchainW.webm")} type="video/webm" />
       </video>
       <TextBlock id="about">
-        <Link to="perks" smooth={true} duration={500}>
+        <Link to="footer" smooth={true} duration={500}>
           <Button cta="Tell Me More!" />
         </Link>
       </TextBlock>
