@@ -33,7 +33,6 @@ const TextBlock = ({ children, id }) => {
             here to help
           </h1>
           <h1>
-            {" "}
             區塊鏈將成為科技、經濟發展之趨勢<span>WeChain</span>
             除了打造全亞洲第一間去中心化交易所外，亦積極投入區塊鏈技術研究，開創異業結合之可能性，為各大產業提升效率、減低成本，並增加附加價值。
           </h1>
@@ -85,7 +84,7 @@ const TextBlockWrapper = styled.section`
 
     h1 {
       color: #bfe8ff;
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 1.2;
       opacity: 0.85;
       span {
@@ -96,6 +95,9 @@ const TextBlockWrapper = styled.section`
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+      }
+      @media (min-width: 414px) {
+        font-size: 1.2rem;
       }
     }
 
