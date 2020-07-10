@@ -1,24 +1,28 @@
-CSS 處理方式："styled-components" & "material-ui" & "mui-treasury"
+CSS 處理方式："styled-components" & "material-ui"
+
+1.  styled-components https://cythilya.github.io/2019/11/08/styeld-system/
+2.  material-ui style https://material-ui.com/styles/basics/
+
+額外 CSS 庫："mui-treasury"
+
+影片背景格式使用 webm ，可參考 https://github.com/Js-Brecht/gatsby-video-bg/blob/master/src/components/video.js
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **After clone the repo**
 
-    Use the Gatsby CLI to create a new site, specifying the startup starter.
+    Use the Gatsby CLI globally or just run
+    `npm install`
 
-    ```shell
-    # create a new Gatsby site using the startup starter
-    gatsby new my-startup-starter https://github.com/gatsbyjs/startup
+2.  **Open the source code and start editing!**
+
+    Use the Gatsby CLI globally or just run
+
+    ```
+    npm start
     ```
 
-1.
-1.  **Open the source code and start editing!**
-
     Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-startup-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
@@ -53,11 +57,3 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 8.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 9.  **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
